@@ -13,3 +13,10 @@ def perfil_view(request):
     },
 
     return render(request, 'perfil.html', context)
+
+def status_view(request):
+    context = {'id_servidor': ServidorAlpha01 ,'status_sistema': Operacional }
+
+        return render(request, 'status.html' , context)
+
+
